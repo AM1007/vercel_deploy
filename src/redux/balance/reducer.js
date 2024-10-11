@@ -7,7 +7,7 @@ export const balanceReducer = (state = initialState, action) => {
         ...state,
         value: state.value + action.payload,
       };
-    case "balance/withdraW":
+    case "balance/withdraw":
       return {
         ...state,
         value: state.value - action.payload,
