@@ -14,7 +14,7 @@ const HomePage = () => {
   };
 
   const handleWithdraw = () => {
-    dispatch(withdrawAction(100));
+    dispatch(withdrawAction(10));
   };
   const handleChangeLang = ({ target: { value } }) => {
     dispatch(localeAction(value));
@@ -24,10 +24,9 @@ const HomePage = () => {
     <div>
       Balance:{value}
       <hr />
-      <hr />
       <button onClick={handleDeposit}>Deposit</button>
       <br />
-      <button onClick={handleWithdraw}>withdraw</button>
+      <button onClick={handleWithdraw}>Withdraw</button>
       <hr />
       <br />
       <select onChange={handleChangeLang} value={locale}>

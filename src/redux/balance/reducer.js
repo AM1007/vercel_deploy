@@ -1,6 +1,5 @@
 const initialState = { value: 0 };
 
-// export const balanceReducer = (state = { value: 0 }, action) => {
 export const balanceReducer = (state = initialState, action) => {
   switch (action.type) {
     case "balance/deposit":
