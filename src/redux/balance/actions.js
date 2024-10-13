@@ -1,9 +1,4 @@
-export const depositAction = (value) => ({
-  payload: value,
-  type: "balance/deposit",
-});
+import { createAction } from "@reduxjs/toolkit";
 
-export const withdrawAction = (value) => ({
-  payload: value,
-  type: "balance/withdraw",
-});
+export const depositAction = createAction("balance/deposit");
+export const withdrawAction = createAction("balance/withdraw");
